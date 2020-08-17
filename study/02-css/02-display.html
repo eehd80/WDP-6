@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>블록과 인라인</title> 
+<style type="text/css">
+    * {
+        list-style: none;
+    }
+	/* <a> p: 10px 15px; bg: tomato; color: #fff*/
+	.gnb li {
+		display: inline-block;
+	}
+	.gnb a {
+		/* display: inline; */
+		/* display: block; */
+		display: inline-block;
+		padding: 10px 15px;
+		background: tomato;
+		color: #fff;
+	}
+    
+</style>
+</head> 
+<body>
+	<ul class="gnb">
+		<li><a href="#">Company</a></li>
+		<li><a href="#">Product</a></li>
+		<li><a href="#">Service</a></li>
+		<li><a href="#">Community</a></li>
+	</ul>
+
+	<div class="popup">
+		나는 팝업이다.
+	</div>
+	<style>
+		.popup {
+			display: block;
+			width: 100px;height: 100px;
+			background: #fff;
+			border: 1px solid lightgray;
+			border-radius: 6px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+	</style>
+</body> 
+</html>

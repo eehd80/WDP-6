@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자 : css</title>
+</head>
+<body>    
+    <h1>속성선택자</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>회원가입</legend>
+
+            <input type="checkbox" name="" id="service">
+            <label for="service">약관동의</label>
+            <br>
+            <label for="id">아이디</label> 
+            <input type="text" name="" id="id">
+            <br>
+            <label for="pw">패스워드</label> 
+            <input type="password" name="" id="pw">
+            <br>
+            <input type="submit" value="확인">
+        </fieldset>
+    </form>
+
+    <style>
+        input[type="text"] {
+            display: block;
+            width: 150px; height: 20px;
+            border: 1px solid yellow;
+        }
+        /* input을 클릭했을 때 */
+        input[type="text"]:focus {
+            background: orange;
+        }
+
+        input[type="password"] {
+            display: block;
+            width: 150px; height: 20px;
+            border: 1px solid rgb(0, 60, 255);
+        }
+
+        input[type="submit"] {
+            width: 60px;height: 30px;
+            background: rgb(37, 37, 37);
+            border: 1px solid #000;
+            color: #fff;
+        }
+    </style>
+</body>
+</html>

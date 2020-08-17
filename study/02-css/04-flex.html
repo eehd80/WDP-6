@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>flexbox</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+            font-size: 16px; line-height: 1.5;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        .flexbox_g {
+            display: flex;
+            margin-bottom: 5px; padding: 5px;
+            background: lightpink;
+        }
+        .flexbox_g > div {
+            width: 24px; height: 24px;
+            margin: 0 1px;
+            background: #fff;
+            color: #000; text-align: center;
+            line-height: 26px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexbox_g flexbox1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <style>
+        .flexbox1 {
+            display: flex;
+        }
+    </style>
+
+    <div class="flexbox_g flexbox2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <style>
+        .flexbox2 {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+    <div class="flexbox_g flexbox3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <style>
+        .flexbox3 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+
+    <div class="flexbox_g flexbox4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <style>
+        .flexbox4 {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+    <div class="flexbox_g flexbox5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <style>
+        .flexbox5 {
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+
+    <div class="flexbox_g flexbox6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <style>
+        .flexbox6 {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+    
+    <div class="flexbox_g flexbox7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <style>
+        .flexbox7 {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+    
+    <div class="flexbox_g flexbox8">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <style>
+        .flexbox8 {
+            display: flex;
+            align-items: center;
+            height: 50px;
+        }
+    </style>
+
+    <div class="flexbox_g flexbox9">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <style>
+        .flexbox9 {
+            display: flex;
+            align-items: stretch;
+            height: 50px;
+        }
+        .flexbox9 > div {
+            height: auto;
+        }
+    </style>
+
+    <div class="flexbox_g flexbox10">
+        <div>1</div>
+    </div>
+    <style>
+        .flexbox10 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+    </style>
+
+    
+</body>

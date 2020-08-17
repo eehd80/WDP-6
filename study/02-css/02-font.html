@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>font</title> 
+<style>
+    * {
+        font-size: 16px;
+    }
+</style>
+</head> 
+<body>
+
+    <em>이탤릭체</em>
+    <style>
+        em {
+            font-style: normal;
+        }
+    </style>
+
+    <!-- 말줄임  -->
+    <ul class="lst_bbs">
+        <li>
+            <a href="#">
+                이천교통약자이동지원센터 촉탁직 채용 최종합격자 명단 공고 이천교통약자이동지원센터 촉탁직 채용 최종합격자 명단 공고
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                콜센터 상담원(경력직) 채용
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                사무직, 운전직(파트타임) 서류전형 합격자 및 면접시험 시행 ...
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                차량 내 영상정보처리기기(CCTV) 설치 안내(처리방침)
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                사무직, 운전직(파트타임) 서류전형 합격자 및 면접시험 시행 ...
+            </a>
+        </li>
+    </ul>
+    <style>
+        .lst_bbs a {
+            display: block;
+            width: 60%; 
+            white-space: nowrap; /* 무조건 한줄로 */
+            overflow: hidden; /* 넘치는 글자 안보이게 */
+            text-overflow: ellipsis; /* 말줄임(...) 표시 */
+        }
+    </style>
+
+
+    <!--  폰트 단위 -->
+    <hr>
+    <!-- 20px -->
+    <h2>폰트 단위</h2>
+    <!-- 18px -->
+    <h3>하나이빈후과</h3>
+    <!-- 14px -->
+    <p class="bold">오늘의 진료는 본관에서 실시합니다.</p>
+    <!-- <li> 14px -->
+    <ul>
+        <!-- <span> 12px -->
+        <li>내과<span>(감기)</span></li>
+        <li>이비인후과<span>(인후염)</span></li>
+        <li>정형외과</li>
+        <li>피부과</li>
+    </ul>
+    <style>
+        h2 {
+            font-size: 1.25em;
+        }
+        h3 {
+            font-size: 1.125em;
+        }
+        p.bold {
+            font-size: 0.875em;
+        }
+        ul li {
+            font-size: 0.875em;
+        }
+        ul li span {
+            font-size: 0.857em;
+            /* 기준 값은 li 태그의 폰트 사이즈 14px */
+            /* em 단위는 부모 태그를 기준으로 상대값 */
+        }
+    </style>
+    <!-- rem -->
+    <ul class="lst-rem">
+        <!-- <li> 14px -->
+        <!-- <span> 12px -->
+        <li>내과<span>(감기)</span></li>
+        <li>이비인후과<span>(인후염)</span></li>
+        <li>정형외과</li>
+        <li>피부과</li>
+    </ul>
+    <style>
+        .lst-rem li span {
+            /* rem은 베이스 폰트를 기준으로 */
+            font-size: 0.750rem;
+        }
+        .lst-rem li {
+            font-size: 0.875rem;
+        }
+    </style>
+
+    <!--  기타 폰트설정  -->
+    <!-- 텍스트 크기는 vw"뷰포트 너비"를 의미 하는 단위로 설정
+    그렇게하면 텍스트 크기가 브라우저 창의 크기를 따릅니다. -->
+    <h2 style="font-size: 10vw;">폰트사이즈 vw</h2>
+    <p class="font1"  style="font-size:5vw;">
+        일회용 mask의 기본적인 기능으로는 <br>
+        김서림 방지 기능, <br>
+        편안한 ear band 등이 있다.
+    </p>
+    <p class="font2">
+        일회용 mask의 특수한 기능으로는<br>
+        입술이 닿지 않는 접이식 구조, <br>
+        외부 유해물질로 부터의 효과적인 보호(MB가공) 등이 있다.
+    </p>
+
+    <!--  폰트  -->
+    <hr>
+    <h2>폰트 패밀리</h2>
+    <p class="dotum">오늘의 날씨를 말씀드리겠습니다. 오늘의 날씨를 말씀드리겠습니다.오늘의 날씨를 말씀드리겠습니다.</p>
+    <p class="gt2">
+        오늘의 날씨를 말씀드리겠습니다.
+        <span>맑음/비옴</span>
+    </p>
+    <style>
+        h2 {
+            font-family: "나눔스퀘어";
+            font-weight: normal;
+        }
+        .dotum {
+            font-family: '돋움', dotum, sans-serif;
+            line-height: 1.5;
+            font-size: 16px;
+            color: orange;
+        }
+        .gt2 {
+            font-family: "나눔명조";
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

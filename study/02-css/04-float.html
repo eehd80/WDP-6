@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style>
+    /* 기본 reset */
+    * {
+        margin: 0; 
+        padding: 0;
+        font-size: 30px;
+        line-height: 1.5;
+        color: #303030;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;        
+    }
+    /* clear-g float 해제 */
+    .clear-g::after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+    .wrap {
+        width: 1200px;margin: 30px auto;
+        border: 5px solid red;
+    }
+    header {
+        /* height: 100px; */
+    }
+    /* float 해제2. clear:both */
+    /* header::after {
+        display: block;
+        clear: both;
+        content: "";
+    } */
+    header h1 {
+        float: left;
+    }
+    header nav {
+        float: right;
+        margin-right: 10px;
+    }
+    header nav li {
+        float: left;
+        padding: 10px 15px;
+    }
+    .slide {
+        height: 300px;
+        background: lightblue;
+    }
+    .container {
+        /* float 해제 1. 부모에게 overflow: hidden */
+        overflow: hidden;
+        /* height: 200px; */
+    }
+    /* .container .sec:last-child {
+        clear: both;
+    } */
+    .sec {
+        float: left;
+        width: 33.333%;
+    }
+    footer {
+        /* height: 100px; */
+        background: lightgray;
+    }
+    /* footer h1, footer > div {
+        float: left;
+    } */
+    footer h1 {
+        float: left;
+        width: 30%;
+    }
+    footer .copyright {
+        float: left;
+        width: 40%;
+    }
+    footer .sns {
+        float: left;
+        width: 30%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="clear-g">
+            <h1>logo</h1>
+            <nav>
+                <ul>
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                    <li>menu4</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="slide">slide</div>
+        <div class="container">
+            <section class="sec">
+                <h2>공지사항/갤러리</h2>
+                <div class="cont">내용</div>
+            </section>
+            <section class="sec">
+                <h2>배너</h2>
+                <div class="cont">내용</div>
+            </section>
+            <section class="sec">
+                <h2>바로가기</h2>
+                <div class="cont">내용</div>
+            </section>
+        </div>
+        <footer class="clear-g">
+            <h1>logo</h1>
+            <div class="copyright">copyright</div>
+            <div class="sns">sns</div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background : css</title>
+</head>
+<body>
+
+    <h1>Background</h1>
+
+    <h2>Background-color</h2>
+
+    <p class="bg-c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magnam sequi vero ratione, doloremque adipisci distinctio minus placeat at. Fugiat laboriosam quae nam atque sit illo facilis omnis iusto eius?</p>
+    <style>
+        .bg-c {
+            background-color: rgba(255,138,0,.5);
+        }
+    </style>
+
+    <h2>background-image</h2>
+    <h1 class="logo">w3schools.com</h1>
+    <style>
+        .logo {
+            width: 100%;height: 60px;
+            background-image: url(./images/logo.png);
+            text-indent: -9999px;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+    <h2>background-position</h2>
+    <div class="box">
+        ddd
+    </div>
+    <style>
+        .box {
+            width: 650px;height: 450px;
+            background-image: url(./images/ban.jpg);
+            background-repeat: no-repeat;
+            background-color: #ccc;
+            background-position: 100px 0;
+        }
+    </style>
+<br><br>
+    <a href="#" class="img-g logo-naver">naver</a>
+    <a href="#" class="img-g link-pre">이전페이지</a>
+    <a href="#" class="img-g link-next">다음페이지</a>
+    <a href="#" class="link-dark">다크모드로 보기</a>
+    <style>
+        /* 공통 클래스 추가 */
+        .img-g {
+            display: block;
+           background-image: url(./images/img-comm.png);
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+        }
+        .link-pre {
+            display: inline-block;
+            width: 76px;height: 76px;
+            background-position: 0 -120px;
+        }
+        /* 마우스 오버시 */
+        .link-pre:hover {
+            background-position: -160px -120px;
+        }
+        .link-next {
+            display: inline-block;
+            width: 76px;height: 76px;
+            background-position: -80px -120px;
+        }
+        /* 마우스 오버시 */
+        .link-next:hover {
+            background-position: -240px -120px;
+        }
+        .logo-naver {
+           width: 443px;height: 105px;
+        }
+        .link-dark {
+            display: block;
+            width: 260px;height: 90px;
+            background-image: url(./images/sp_main.png);
+            background-repeat: no-repeat;
+            background-position: -558px -120px;
+            text-indent: -9999px;
+        }
+    </style>
+
+    <h2>background-attachment</h2>
+    <div class="bg-atta">
+
+    </div>
+    <style>
+        /* w:100%; h:100px; bg 꽉차게... */
+        .bg-atta {
+            width: 100%; height: 100px;
+            background-image: url(./images/map.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+    </style>
+
+    <h2>background-size</h2>
+    <h3>1. defult (원래 사이즈 그대로 보여짐)</h3>
+    <a href="#" class="ban">
+        네이버 해피빈
+        <strong>해피빈 펀딩 참여하면 기부콩 3천원</strong>
+        이번 주 오픈 펀딩은?
+    </a>
+
+    <h3>2. contain (모든 배경이미지가 보임)</h3>
+    <a href="#" class="ban ban-contain">
+        네이버 해피빈
+        <strong>해피빈 펀딩 참여하면 기부콩 3천원</strong>
+        이번 주 오픈 펀딩은?
+    </a>
+
+    <h3>3. cover (배경이미지가 꽉 참)</h3>
+    <a href="#" class="ban ban-cover">
+        네이버 해피빈
+        <strong>해피빈 펀딩 참여하면 기부콩 3천원</strong>
+        이번 주 오픈 펀딩은?
+    </a>
+
+    <h3>4. 절대값(px)</h3>
+    <a href="#" class="ban ban-px">
+        네이버 해피빈
+        <strong>해피빈 펀딩 참여하면 기부콩 3천원</strong>
+        이번 주 오픈 펀딩은?
+    </a>
+
+    <h3>5. 상대값(%)</h3>
+    <a href="#" class="ban ban-per">
+        네이버 해피빈
+        <strong>해피빈 펀딩 참여하면 기부콩 3천원</strong>
+        이번 주 오픈 펀딩은?
+    </a>
+    <style>
+        .ban-per {
+            background-size: auto 50%;
+        }
+        .ban-px {
+            background-size: 300px 50px;
+        }
+        .ban-cover {
+            background-size: cover;
+        }
+        .ban-contain {
+            background-size: contain;
+        }
+        .ban {
+            display: block;
+            width: 100%;height: 100px;
+            background-image: url(./images/ban.jpg);
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+            background-color: red;
+        }
+    </style>
+
+    <h2>background Shorthand</h2>
+    <div class="bg-short">
+
+    </div>
+    <style>
+        .bg-short {
+            background: url(./images/map.jpg) no-repeat -100px -200px;
+        }
+    </style>        
+
+</body>
+</html>

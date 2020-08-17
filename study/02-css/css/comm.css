@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    list-style: none; 
+    text-decoration: none;
+}
+
+/* pc버전 - 4단 */
+.w3-row-padding {
+    display: flex;
+    justify-content: space-between;
+    width: 96%; 
+    margin: auto;
+}
+.w3-row-padding .w3-third {
+    width: 24%;
+    border: 1px solid red;
+}
+.w3-row-padding h2 {
+    padding: 10px 0 0;
+    /* 20px */
+    font-size: 1.250em; 
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+.w3-row-padding p {
+    padding: 15px;
+    /* 14px */
+    font-size: 0.875em;
+}
+
+/* tablet - 2단 */
+/* 360px < width < 768px */
+@media screen and (max-width: 768px) {
+    .w3-row-padding {
+        flex-wrap: wrap;
+    }
+    .w3-row-padding .w3-third {
+        width: 49%;
+        margin-bottom: 10px;
+    }
+  }
+
+  /* mobile - 1단 */
+  /* 0 < width < 360px */
+  @media screen and (max-width: 360px) {
+    .w3-row-padding .w3-third {
+        width: 100%;
+    }
+  }
