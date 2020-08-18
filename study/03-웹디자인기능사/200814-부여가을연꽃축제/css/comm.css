@@ -10,6 +10,50 @@
   text-decoration: none;
 }
 
+.blind {
+  text-indent: -9999px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.tit- {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #999;
+}
+
+.tit- span {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.tit- span::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background: #E84E83;
+}
+
+.link-more {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.link-more::after {
+  content: "\f067";
+  margin-left: 3px;
+  font-family: 'Line Awesome Free';
+  font-weight: 900;
+}
+
 .wrap {
   position: relative;
   width: 100%;
@@ -70,21 +114,119 @@ header h1 a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 30px 0 0 30px;
 }
 
-.sec-bbs {
+.container .sec- {
+  position: relative;
   width: 48%;
+  margin-bottom: 40px;
 }
 
-.sec-gallery {
-  width: 48%;
+.sec-bbs li {
+  position: relative;
 }
 
-.sec-goto {
+.sec-bbs li::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background: #ecf0f2;
+}
+
+.sec-bbs a {
+  display: block;
+  padding: 2px 0 2px 15px;
+  color: #333;
+}
+
+.sec-bbs .time {
+  float: right;
+  font-size: 12px;
+  font-family: verdana;
+  color: #999;
+}
+
+.sec-gallery .tit- {
+  margin-bottom: 0;
+}
+
+.sec-gallery .cont {
+  position: relative;
+  overflow: hidden;
+  height: 229px;
+}
+
+.sec-gallery .lst-gallery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200%;
+}
+
+.sec-gallery .lst-gallery li {
   width: 100%;
+}
+
+.sec-gallery .lst-gallery img {
+  width: 100%;
+}
+
+.container .sec-goto {
+  width: calc(100% + 30px);
+  margin-left: -30px;
+  background: #EFEFEF url(../images/bg-wrap.jpg) 0 -57px no-repeat;
+  background-size: 100% auto;
+}
+
+.container .sec-goto .lst-goto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 130px;
+  margin: auto;
+}
+
+.container .sec-goto .lst-goto a {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #444;
+}
+
+.container .sec-goto .lst-goto i {
+  display: block;
+  margin: 0 auto 10px;
+  font-size: 40px;
+  color: #444;
+  text-align: center;
 }
 
 footer {
   height: 100px;
+}
+
+footer .foot-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  margin: auto;
 }
 /*# sourceMappingURL=comm.css.map */
