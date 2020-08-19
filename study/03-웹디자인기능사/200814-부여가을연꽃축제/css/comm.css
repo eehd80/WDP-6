@@ -78,13 +78,12 @@ header h1 {
 header h1 a {
   display: block;
   height: 100px;
-  background: url(../images/logo.png) 50% 50% no-repeat;
+  background: url(../images/logo.png) 12px 50% no-repeat;
   background-size: contain;
   text-indent: -9999px;
 }
 
 .nav-d1 {
-  margin-top: 20px;
   border-top: 1px solid #eee;
 }
 
