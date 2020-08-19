@@ -84,7 +84,7 @@ header h1 a {
 }
 
 .nav-d1 {
-  border-top: 1px solid #eee;
+  border-bottom: 1px solid #ccc;
 }
 
 .nav-d1 > li.on > a {
@@ -101,14 +101,15 @@ header h1 a {
 }
 
 .nav-d1 > li.on .nav-d2 {
-  display: block;
+  max-height: 176px;
 }
 
 .nav-d1 > li > a {
   position: relative;
   display: block;
   padding: 20px 0 15px 15px;
-  border-bottom: 1px solid #ccc;
+  background: #fff;
+  border-top: 1px solid #ccc;
 }
 
 .nav-d1 > li > a::after {
@@ -130,21 +131,25 @@ header h1 a {
 }
 
 .nav-d2 {
-  display: none;
-  background: #fff;
+  overflow: hidden;
+  max-height: 0;
+  background: #f9f9f9;
+  -webkit-transition: max-height .5s;
+  transition: max-height .5s;
+  border-left: 3px solid #E84E83;
 }
 
 .nav-d2 a {
   display: block;
   position: relative;
-  padding: 12px 0 11px 40px;
+  padding: 12px 0 11px 47px;
   font-size: 14px;
 }
 
 .nav-d2 a::after {
   position: absolute;
-  top: 23px;
-  left: 24px;
+  top: 20px;
+  left: 30px;
   content: '';
   width: 3px;
   height: 3px;

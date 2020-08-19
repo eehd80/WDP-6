@@ -75,7 +75,7 @@ header {
 }
 
 .nav-d1 {
-    border-top: 1px solid $bgGray;
+    border-bottom: 1px solid #ccc;
     > li {
         &.on {
             > a {
@@ -89,7 +89,7 @@ header {
                 }
             }
             .nav-d2 {
-                display: block;
+                max-height: 176px;
             }
         }
         >a {
@@ -97,8 +97,8 @@ header {
             display: block;
             padding: 20px 0 15px 15px;
             // color: #fff;
-            // background: #fff;
-            border-bottom: 1px solid #ccc;
+            background: #fff;
+            border-top: 1px solid #ccc;
 
             &::after {
                 content: "\f105";
@@ -119,14 +119,17 @@ header {
     }
 }
 .nav-d2 {
-    display: none;
-    background: #fff;
+    overflow: hidden;
+    max-height: 0;
+    background: rgb(249, 249, 249);
+    transition: max-height .5s;
+    border-left: 3px solid $pink;
     a {
         display: block; position: relative;
-        padding: 12px 0 11px 40px;
+        padding: 12px 0 11px 47px;
         font-size: 14px;
         &::after {
-            position: absolute;top: 23px;left: 24px;
+            position: absolute;top: 20px;left: 30px;
             content: '';
             width: 3px;height: 3px;
             background: $borderGray;
