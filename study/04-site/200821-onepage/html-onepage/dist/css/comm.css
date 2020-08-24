@@ -1,0 +1,52 @@
+@import url("./reset.css");
+/* clearfix */
+#skipnavigation a {
+  position: absolute;
+  left: -3000%;
+}
+
+#skipnavigation a:focus {
+  display: block;
+  left: 0;
+  top: 0;
+  z-index: 10000000000;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #0072bc;
+  color: #fff;
+  text-align: center;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.slide-main div {
+  position: relative;
+  height: 100vh;
+}
+
+.slide-main img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slide-main .txt {
+  position: absolute;
+  top: 50%;
+  left: 70px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 47px;
+  color: #fff;
+}
+
+.slide-main .txt span {
+  display: block;
+  font-size: 14px;
+}
+/*# sourceMappingURL=comm.css.map */

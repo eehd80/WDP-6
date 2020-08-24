@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url('./reset.css');
+@import 'variables';
+@import 'mixin';
+
+// 건너뛰기
+#skipnavigation {
+  a {
+    position:absolute; left:-3000%;
+    &:focus { display:block; left:0; top:0; z-index:10000000000; width:100%; height:30px; line-height:30px; background:$cerulean; color:#fff; text-align:center;}
+  }
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: auto;
+}
+
+// slide
+.slide-main {
+  div {
+    position: relative;
+    height: 100vh;
+  }
+  img {
+    width: 100%;height: 100%;
+    object-fit: cover;
+  }
+  .txt {
+    position: absolute;top: 50%;left: 70px;
+    transform: translateY(-50%);
+    font-size: 47px;
+    color: #fff;
+    span {
+      display: block;
+      font-size: 14px;
+    }
+  }
+}
