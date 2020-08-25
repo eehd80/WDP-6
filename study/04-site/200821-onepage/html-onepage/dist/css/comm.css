@@ -230,4 +230,155 @@ header .util a:last-child::after {
 .slide-main .slick-dots li button::before {
   display: none;
 }
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.sec_g {
+  min-height: 570px;
+  padding: 89px 0;
+}
+
+.sec_g .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1100px;
+  margin: auto;
+}
+
+.sec_g .tit_g {
+  width: 30%;
+}
+
+.sec_g .tit_g h2 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 16px;
+  font-size: 30px;
+  color: #2e2d2d;
+  letter-spacing: -1px;
+}
+
+.sec_g .tit_g h2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -7px;
+  right: -21px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #007c37;
+  border-radius: 50%;
+}
+
+.sec_g .tit_g h2 span {
+  color: #007c37;
+}
+
+.sec_g .tit_g p {
+  font-size: 16px;
+  color: #515050;
+}
+
+.sec_g .cont_g {
+  width: 60%;
+}
+
+.sec_festival {
+  background: url(../../images/bg-festival.png) 0 0 repeat-x;
+  background-size: contain;
+}
+
+.sec_festival img {
+  width: 100%;
+}
+
+.sec_festival .slick-slide {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.sec_festival .slick-current {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.sec_festival .slick-list {
+  padding: 20px 0 0 0 !important;
+  height: 390px;
+}
+
+.sec_local {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DDF7FE), to(#fff));
+  background-image: linear-gradient(#DDF7FE, #fff);
+}
+
+.sec_sns {
+  position: relative;
+  background-size: cover;
+  background: url(../../images/bg-sns.png) 0 25% no-repeat;
+}
+
+.sec_sns::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background: #414796;
+  opacity: 0.6;
+}
+
+.sec_sns .tit_g {
+  position: relative;
+  z-index: 100;
+}
+
+.sec_sns .tit_g h2 {
+  color: #fff;
+}
+
+.sec_sns .tit_g h2::after {
+  border-color: #fff;
+}
+
+.sec_sns .tit_g p {
+  color: #fff;
+}
+
+.sec_bbs {
+  background: #eee;
+}
+
+footer {
+  background: #333;
+}
+
+footer * {
+  color: #fff;
+}
+
+footer .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1100px;
+  height: 200px;
+  margin: auto;
+  padding: 40px 0;
+}
 /*# sourceMappingURL=comm.css.map */

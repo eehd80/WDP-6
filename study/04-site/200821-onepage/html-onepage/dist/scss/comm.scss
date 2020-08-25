@@ -3,8 +3,6 @@
 @import 'variables';
 @import 'mixin';
 
-// body {background: url(../../pc.png) 50% 0 no-repeat;background-size: 105% auto;}.wrap {opacity: 0.7;}
-
 // 건너뛰기
 #skipnavigation {
   a {
@@ -189,4 +187,122 @@ header {
     }
   }
 }
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
 
+
+// container
+.container {
+  max-width: 100%;
+  padding: 0;
+}
+.sec_g {
+  min-height: 570px;
+  padding: 89px 0;
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: auto;
+  }
+  .tit_g {
+    width: 30%;
+    h2 {
+      display: inline-block;
+      position: relative;
+      margin-bottom: 16px;
+      font-size: 30px;
+      color: #2e2d2d;
+      letter-spacing: -1px;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;top: -7px;right: -21px;
+        width: 6px;height: 6px;
+        border: 2px solid #007c37;
+        border-radius: 50%;
+      }
+      span {
+        color: #007c37;
+      }
+    }
+    p {
+      font-size: 16px;
+      color: #515050;
+    }
+  }
+  
+  .cont_g {
+    width: 60%;
+  }
+}
+.sec_festival {
+  background: url(../../images/bg-festival.png) 0 0 repeat-x;
+  background-size: contain;
+  img {
+    width: 100%;
+  }
+  .slick-slide {
+    transition: all .5s;
+  }
+  .slick-current {
+    transform: scale(1.1);
+  }
+  .slick-list {
+        padding: 20px 0 0 0 !important;
+        height: 390px;
+  }
+}
+
+// 지역별 여행이야기
+.sec_local {
+  background-image: linear-gradient(#DDF7FE, #fff);
+}
+
+// sns
+.sec_sns {
+  position: relative;
+  background-size: cover;
+  background: url(../../images/bg-sns.png) 0 25% no-repeat;
+  &::after {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    content: '';
+    background: #414796;
+    opacity: 0.6;
+  }
+  .tit_g {
+    position: relative; z-index: 100;
+    h2 {
+      color: #fff;
+      &::after {
+        border-color: #fff;
+      }
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
+
+//공지사항
+.sec_bbs {
+  background: #eee;
+}
+
+footer {
+  background: #333;
+  *{
+    color: #fff;
+  }
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px; height: 200px;
+    margin: auto; padding: 40px 0;
+  }
+}
+
+
+
+// body {background: rgba() url(../../pc.png) 50% -712px no-repeat;background-size: 105% auto;}.wrap {opacity: 1;}

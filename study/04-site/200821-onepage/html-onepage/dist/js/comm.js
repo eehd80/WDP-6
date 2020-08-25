@@ -11,7 +11,7 @@ $(document).ready(function () {
   // slide-festival
   $('.slide-festival').slick({
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: '0',
     slidesToShow: 3,
     responsive: [{
         breakpoint: 768,
