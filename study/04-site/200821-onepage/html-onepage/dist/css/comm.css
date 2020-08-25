@@ -25,9 +25,9 @@
 
 header {
   position: fixed;
-  top: 30px;
-  left: 2%;
-  right: 2%;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 10000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,17 +35,28 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 30px 2% 20px;
 }
 
-header * {
-  color: red;
+header.affix {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+header.affix h1 a {
+  background-image: url(../../images/logo-b.png);
+}
+
+header.affix .nav-d1 a, header.affix .util a {
+  color: #000;
+  text-shadow: none;
 }
 
 header h1 a {
   display: block;
   width: 152px;
   height: 45px;
-  background: url(../../images/logo@2x.png) 0 0 no-repeat;
+  background: url(../../images/logo-w.png) 0 0 no-repeat;
   background-size: contain;
   text-indent: -9999px;
 }
