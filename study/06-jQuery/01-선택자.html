@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            
+            $('body').css('background' , 'lightgray');
+            $('#wrap').css('border','1px solid red')
+            $('.list').css('border', '1px solid blue')
+
+        })
+    </script>
+</head>
+<body>
+    
+    <div id="wrap">
+        wrap
+        <ul class="list">
+            ul
+            <li>
+                li
+                <span>span</span>
+                <span>span</span>
+            </li>
+            <li>
+                li
+                <b>b</b>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

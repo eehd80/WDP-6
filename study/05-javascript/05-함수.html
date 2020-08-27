@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+    <script>
+        let a = 1
+        let b = 2
+
+        console.log(a + b)
+
+        // 함수로...
+        function add(a, b) {
+            return a + b;
+        }
+        console.log('a + b : ' + add(1, 2));
+
+        // name 출력
+        function hello(name) {
+            // console.log('Hello ' + name + '!')
+            console.log(`Hello ${name}!`) //es6
+        }
+
+        hello('odada')
+
+        // 점수 함수화
+        function AgetGrade(score){
+            if(score === 100){
+                return 'A+';
+            } else if(score >= 90) {
+                return 'A';
+            } else if(score >= 80) {
+                return 'B+';
+            } else {
+                return 'F';
+            }
+        }
+
+        const agrade = AgetGrade(90);
+        console.log(agrade);
+
+        
+
+    </script>
+</head>
+<body>
+    <div class="wrap"></div>
+</body>
+</html>

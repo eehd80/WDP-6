@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+    <script>
+        // 산술 연산자
+        let a = 1 + 2 - (3 * 4) / 4;
+        console.log('1 + 2 - (3 * 4) / 4 = ' + a);
+
+        let b = 1;
+        console.log('b++ : '+ b++);
+        console.log('++b : '+ ++b);
+
+        // 대입 연산자
+        let c = 1;
+        c += 3 // c = c + 3;
+
+        console.log('c += 3 : ' + c);
+
+        // 논리 연산자
+        // NOT(!)
+        const d = !true;
+        console.log('!true : ' + d) // false
+
+        // AND (&&) - 둘 다 참이어야 참
+        let e = true && true;
+        e = false && false;
+
+        console.log(e);
+
+        // OR (||) - 둘 중 하나만 참이면 참
+        let f = true || false; 
+
+        console.log(f)
+
+
+        // 비교 연산자 (두 값이 일치하는지 확인)
+        const aa = 1;
+        const bb = '1';
+        const equals = aa === bb;
+        console.log('aa === bb : ' + equals);
+
+        const cc = 1;
+        const dd = 2;
+        const equals2 = cc !== dd;
+        console.log('cc !== dd : ' + equals2);
+
+        // 문자열 붙이기
+        const ee = '안녕'
+        const ff = '하세요.'
+        console.log(ee + ff + '오다다입니다.')
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
