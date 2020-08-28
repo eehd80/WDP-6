@@ -9,7 +9,28 @@
 
 <script src="./js/vendor/jquery-1.10.2.min.js"></script>
 <script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="./js/main.js"></script>
+<!-- <script src="./js/main.js"></script> -->
+<script>
+    $(function(){
+        $('#typo')
+        .mouseenter(function(){
+            $('#typo').css({
+                'background': 'purple'
+            })
+            $('h1').css({
+                'color' : 'purple'
+            })
+        })
+        .mouseout(function(){
+            $('#typo').css({
+                'background': ''
+            })
+            $('h1').css({
+                'color' : ''
+            })
+        })
+    })
+</script>
 </head>
 <body>
 
