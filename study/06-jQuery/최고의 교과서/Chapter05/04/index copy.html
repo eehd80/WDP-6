@@ -3,49 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Chapter 05-03 - jQuery 최고의 교과서</title>
+<title>Chapter 05-04 - jQuery 최고의 교과서</title>
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ropa+Sans">
 <link rel="stylesheet" href="./css/normalize.css">
 <link rel="stylesheet" href="./css/main.css">
 <script src="./js/vendor/modernizr.custom.min.js"></script>
 <script src="./js/vendor/jquery-1.10.2.min.js"></script>
-<!-- <script src="./js/main.js"></script> -->
-<script>
-    $(function(){
-        // page-header 클래스를 가진 요소마다 작업을 수행
-        $('.page-header').each(function(){
-            
-            let $윈도우 = $(window),
-                $헤더 = $(this),
-                헤더위치 = $헤더.offset().top
-
-            $윈도우.on('scroll', function(){
-                //$(window).scrollTop() : 윈도우의 스크롤 값을 알아내는 구문
-                console.log(`윈도우의 스크롤 값 : ${$윈도우.scrollTop()}`)
-                //$헤더.offset().top : 헤더의 위치 값을 알아내는 구문
-                console.log(`헤더의 위치 값 : ${헤더위치}`)
-
-                if($윈도우.scrollTop() > 헤더위치){
-                    $헤더.addClass('sticky');
-                }else{
-                    $헤더.removeClass('sticky');
-                }
-
-            })
-
-
-        })
-
-    })
-
-
-
-</script>
+<script src="./js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script src="./js/main.js"></script>
 </head>
 <body>
 
 <header class="page-header" role="banner">
-    <div class="inner">
+    <div class="inner clearfix">
         <h1 class="site-logo"><a href="./"><img src="./img/logo.png" alt="Shiftbrain" height="65" width="200"></a></h1>
         <nav class="primary-nav" role="navigation">
             <ul>
