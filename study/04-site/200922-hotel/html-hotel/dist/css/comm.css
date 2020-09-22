@@ -1,0 +1,22 @@
+@import url("./reset.css");
+@import url("./main.css");
+@import url("./contents.css");
+/* clearfix */
+#skipnavigation a {
+  position: absolute;
+  left: -3000%;
+}
+
+#skipnavigation a:focus {
+  display: block;
+  left: 0;
+  top: 0;
+  z-index: 10000000000;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #0072bc;
+  color: #fff;
+  text-align: center;
+}
+/*# sourceMappingURL=comm.css.map */
