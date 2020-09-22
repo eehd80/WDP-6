@@ -1,6 +1,4 @@
 @import url("./reset.css");
-@import url("./main.css");
-@import url("./contents.css");
 /* clearfix */
 #skipnavigation a {
   position: absolute;
@@ -18,5 +16,77 @@
   background: #0072bc;
   color: #fff;
   text-align: center;
+}
+
+body {
+  background-color: tan;
+}
+
+.wrap {
+  padding-left: 15%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  background: tomato;
+}
+
+nav {
+  overflow: hidden;
+  height: 5vh;
+  background: #000;
+}
+
+.container {
+  height: 95vh;
+  background: #eee;
+}
+
+article {
+  float: left;
+  width: 20%;
+  height: 25%;
+}
+
+article:first-child {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+article:nth-child(2) {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1599px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  body {
+    background-color: blue;
+  }
 }
 /*# sourceMappingURL=comm.css.map */

@@ -1,7 +1,5 @@
 @charset "UTF-8";
 @import url('./reset.css');
-@import url('./main.css');
-@import url('./contents.css');
 @import 'variables';
 @import 'mixin';
 
@@ -12,3 +10,71 @@
     &:focus { display:block; left:0; top:0; z-index:10000000000; width:100%; height:30px; line-height:30px; background:$cerulean; color:#fff; text-align:center;}
   }
 }
+
+// 1599 이상
+body {
+  background-color: tan;
+}
+.wrap {
+  padding-left: 15%;
+}
+header {
+  position: fixed; top: 0;left: 0; bottom: 0;
+  width: 15%;
+  background: tomato;
+}
+nav {
+  overflow: hidden;
+  height: 5vh;
+  background: #000;
+}
+.container {
+  height: 95vh;
+  background: #eee;
+}
+
+$black : #000;
+
+article {
+  float: left;
+  width: 20%;height: 25%;
+  &:first-child {
+    background: rgba($black, .1);
+  }
+  &:nth-child(2){
+    background: rgba($black, .2);
+  }
+}
+
+
+// 1599 이하
+@media screen and (max-width: 1599px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  body {
+    background-color: blue;
+  }
+}
+
