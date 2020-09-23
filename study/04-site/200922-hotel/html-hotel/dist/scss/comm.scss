@@ -199,13 +199,55 @@ article {
 
 // 639px 이하
 @media screen and (max-width:639px) {
+  header {
+    overflow: hidden;
+    // height: 80px;
+  }
 
+  nav {
+    display: none;
+  }
+
+  article {
+    &:first-child {
+      height: 350px;
+    }
+    &:nth-child(2) {
+      height: 200px;
+    }
+  }
 }
 
 // 479px 이하
 @media screen and (max-width: 479px) {
-  body {
-    background-color: blue;
+  header {
+    @include posX;
+    top: 50px;
+    z-index: 100;
+    width: 80vw;
+    height: 20vh;
+  }
+
+  .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    height: 100vh;
+    // width: 100vw;height: 100vh;  둘 중 하나 사용
+  }
+
+  article {
+    &:first-child {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    &:nth-child(n+2) {
+      display: none;
+    }
   }
 }
 

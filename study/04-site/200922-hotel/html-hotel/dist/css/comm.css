@@ -208,9 +208,47 @@ article:nth-child(12) {
   }
 }
 
+@media screen and (max-width: 639px) {
+  header {
+    overflow: hidden;
+  }
+  nav {
+    display: none;
+  }
+  article:first-child {
+    height: 350px;
+  }
+  article:nth-child(2) {
+    height: 200px;
+  }
+}
+
 @media screen and (max-width: 479px) {
-  body {
-    background-color: blue;
+  header {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 50px;
+    z-index: 100;
+    width: 80vw;
+    height: 20vh;
+  }
+  .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    height: 100vh;
+  }
+  article:first-child {
+    width: 100vw;
+    height: 100vh;
+  }
+  article:nth-child(n+2) {
+    display: none;
   }
 }
 /*# sourceMappingURL=comm.css.map */
