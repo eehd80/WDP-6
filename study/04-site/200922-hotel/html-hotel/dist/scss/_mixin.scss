@@ -1,6 +1,9 @@
 @mixin posX {
 	position: absolute;left: 50%;transform: translateX(-50%);
 }
+@mixin posY {
+	position: absolute;top: 50%;transform: translateY(-50%);
+}
 @mixin ell {
 	display: inline-block;overflow: hidden;
 	text-overflow: ellipsis;white-space: nowrap;vertical-align: middle;

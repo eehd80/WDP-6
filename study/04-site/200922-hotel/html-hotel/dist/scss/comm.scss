@@ -4,6 +4,7 @@
 @import 'mixin';
 
 $black : #000;
+$white : #fff;
 
 // 건너뛰기
 #skipnavigation {
@@ -14,77 +15,117 @@ $black : #000;
 }
 
 // 1599px 이상
-body {
-  background-color: tan;
-}
 .wrap {
   padding-left: 15%;
 }
 header {
   position: fixed; top: 0;left: 0; bottom: 0;
-  width: 15%;
-  background: tomato;
+  width: 15%; padding: 30px 20px;
+  background: $white;
   transition: all .5s;
+  h1 a {
+    display: block;
+    height: 160px;
+    background: url(../../images/logo1.png) 50% 50% no-repeat;
+    text-indent: -9999px;
+  }
+  #gnb {
+    width: 50%;
+    margin: 20px auto 0;
+    a {
+      font-size: 16px;
+    }
+    i {
+      margin-right: 5px;
+      font-size: 20px;
+    }
+  }
 }
 nav {
+  position: relative;
   overflow: hidden;
   height: 5vh;
-  background: #000;
+  background: $black;
   transition: all .5s;
 }
 .container {
+  position: relative;
   height: 95vh;
-  background: #eee;
+  // background: #eee;
 }
 
 $w : 20%;
 $h : 25%;
 
 article {
+  position: relative;
+  overflow: hidden;
   float: left;
   width: $w;
   height: $h;
+  padding: 30px;
   transition: all .5s;
   &:first-child {
     width: $w * 3;
     height: $h * 2;
-    background: rgba($black, .1);
+    background: url(../../images/pic1.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    h2 {
+      position: absolute;bottom: -120px;right: 0;
+      font-size: 250px; color: $white;
+    }
   }
   &:nth-child(2){
     width: 40%;
-    background: rgba($black, .15);
+    background: $white;
   }
   &:nth-child(3){
-    background: rgba($black, .2);
+    background: #c6f6fa;
+    i {
+      position: absolute;bottom: -40px; right: -50px;
+      color: $white; font-weight: bold;
+      font-size: 260px;
+      animation: rotate- 1s infinite;
+    }
+    @keyframes rotate-{
+      0% {transform: rotate(0);}
+      100% {transform: rotate(365deg);}
+    }
   }
   &:nth-child(4){
-    background: rgba($black, .25);
+    background: url(../../images/pic2.jpg) 50% 50% no-repeat;
+    background-size: cover;
   }
   &:nth-child(5){
-    background: rgba($black, .3);
+    background: url(../../images/pic3.jpg) 50% 50% no-repeat;
+    background-size: cover;
   }
   &:nth-child(6){
     width: $w * 2;
-    background: rgba($black, .35);
+    background: $white;
   }
   &:nth-child(7){
-    background: rgba($black, .4);
+    background: url(../../images/pic4.jpg) 50% 50% no-repeat;
+    background-size: cover;
   }
   &:nth-child(8){
-    background: rgba($black, .45);
+    background: $white;
   }
   &:nth-child(9){
     width: $w * 2;
-    background: rgba($black, .5);
+    background: url(../../images/pic5.jpg) 50% 50% no-repeat;
+    background-size: cover;
   }
   &:nth-child(10){
-    background: rgba($black, .55);
+    background: url(../../images/pic6.jpg) 50% 50% no-repeat;
+    background-size: cover;
   }
   &:nth-child(11){
-    background: rgba($black, .6);
+    background: #e6f5fc;
   }
   &:nth-child(12){
-    background: rgba($black, .65);
+    background: url(../../images/pic7.jpg) 50% 50% no-repeat;
+    background-size: cover;
   }
 }
 
@@ -200,7 +241,7 @@ article {
 // 639px 이하
 @media screen and (max-width:639px) {
   header {
-    overflow: hidden;
+    // overflow: hidden;
     // height: 80px;
   }
 
