@@ -7,6 +7,10 @@
   text-indent: -9999px;
 }
 
+.wrap {
+  padding-top: 72px;
+}
+
 .navbar-nav {
   margin-left: auto;
 }
@@ -34,5 +38,41 @@ footer {
 
 footer * {
   color: #fff;
+}
+
+.slideanim {
+  visibility: hidden;
+}
+
+.slide-ani {
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
+  visibility: visible;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=comm.css.map */

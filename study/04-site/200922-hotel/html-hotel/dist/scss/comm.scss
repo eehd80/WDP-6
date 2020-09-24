@@ -16,6 +16,7 @@ $white : #fff;
 
 // 1599px 이상
 .wrap {
+  position: relative;
   padding-left: 15%;
 }
 header {
@@ -42,15 +43,23 @@ header {
   }
 }
 nav {
-  position: relative;
+  position: absolute;
+  top: 0;left: 15%; right: 0; z-index: 1000;
   overflow: hidden;
-  height: 5vh;
+  height: 50px;
   background: $black;
   transition: all .5s;
+  * {
+    color: $white;
+  }
+  .col-right {
+    float: right;
+  }
 }
 .container {
   position: relative;
-  height: 95vh;
+  height: 100vh;
+  padding-top: 50px;
   // background: #eee;
 }
 
@@ -58,6 +67,7 @@ $w : 20%;
 $h : 25%;
 
 article {
+  display: inline-block;
   position: relative;
   overflow: hidden;
   float: left;

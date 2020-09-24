@@ -19,6 +19,7 @@
 }
 
 .wrap {
+  position: relative;
   padding-left: 15%;
 }
 
@@ -56,20 +57,34 @@ header #gnb i {
 }
 
 nav {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 0;
+  z-index: 1000;
   overflow: hidden;
-  height: 5vh;
+  height: 50px;
   background: #000;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
+nav * {
+  color: #fff;
+}
+
+nav .col-right {
+  float: right;
+}
+
 .container {
   position: relative;
-  height: 95vh;
+  height: 100vh;
+  padding-top: 50px;
 }
 
 article {
+  display: inline-block;
   position: relative;
   overflow: hidden;
   float: left;

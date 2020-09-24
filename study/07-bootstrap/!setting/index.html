@@ -12,12 +12,13 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <!-- Latest compiled JavaScript -->
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="./dist/js/comm.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <div id="home" class="wrap">
         <!-- header -->
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
             <!-- Brand -->
             <h1>
                 <a class="navbar-brand" href="#">oddcode</a>
@@ -86,9 +87,9 @@
         <!-- THE BAND -->
         <div id="band" class="container text-center sec-band">
             <h2 class="slideanim">THE BAND</h2>
-            <p>This is some text.</p>
+            <p class="slideanim">This is some text.</p>
 
-            <div class="row mt-5">
+            <div class="row mt-5 slideanim">
                 <div class="col-md-3 col-sm-6 col-xs-12"><img src="./images/bandmember.jpg" class="rounded-circle" alt=""></div>
                 <div class="col-md-3 col-sm-6 col-xs-12"><img src="./images/bandmember.jpg" class="rounded-circle" alt=""></div>
                 <div class="col-md-3 col-sm-6 col-xs-12"><img src="./images/bandmember.jpg" class="rounded-circle" alt=""></div>
@@ -100,9 +101,12 @@
         <div id="tour" class="container-fluid sec-tour">
             <div class="container text-center">
                 <h2 class="slideanim">TOUR DATES</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum impedit asperiores laboriosam quaerat quidem ab velit labore similique quisquam, ipsam voluptates expedita assumenda perferendis, eum iure? Distinctio, ipsam velit.</p>
+                <p class="slideanim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum impedit
+                    asperiores laboriosam quaerat quidem ab velit labore similique quisquam, ipsam voluptates expedita
+                    assumenda perferendis, eum iure? Distinctio, ipsam velit.</p>
             
                 <!-- tab -->
+                <div class="slideanim">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs  mt-5">
                     <li class="nav-item">
@@ -122,15 +126,16 @@
                     <div class="tab-pane container fade" id="menu1">menu1 contents</div>
                     <div class="tab-pane container fade" id="menu2">menu2 contents</div>
                 </div>
+                </div>
             </div>
         </div>
 
         <!-- Contact -->
         <div id="contact" class="container text-center sec-contact">
-            <h2>Contact</h2>
-            <p>We love our fans!</p>
+            <h2 class="slideanim">Contact</h2>
+            <p class="slideanim">We love our fans!</p>
             <!-- forms -->
-            <form action="/action_page.php" class="mt-5 form-contact">
+            <form action="/action_page.php" class="mt-5 form-contact slideanim">
                 <div class="row">
                     <div class="form-group col-sm-6">
                         <label for="usr" class="blind">Name:</label>
